@@ -1,0 +1,169 @@
+{
+  "embedding": "hash",
+  "comparison": [
+    {
+      "strategy": "similarity",
+      "k": 3,
+      "hit@k": 0.833,
+      "hit_all_facts@k": 0.778,
+      "mean_latency_ms": 2.6,
+      "misses": [
+        "T-02",
+        "T-04",
+        "T-08"
+      ],
+      "n": 18
+    },
+    {
+      "strategy": "similarity",
+      "k": 8,
+      "hit@k": 0.944,
+      "hit_all_facts@k": 0.944,
+      "mean_latency_ms": 2.7,
+      "misses": [
+        "T-08"
+      ],
+      "n": 18
+    },
+    {
+      "strategy": "mmr",
+      "k": 4,
+      "hit@k": 0.889,
+      "hit_all_facts@k": 0.722,
+      "mean_latency_ms": 6.1,
+      "misses": [
+        "T-02",
+        "T-08"
+      ],
+      "n": 18
+    },
+    {
+      "strategy": "threshold",
+      "k": 4,
+      "hit@k": 0.889,
+      "hit_all_facts@k": 0.778,
+      "mean_latency_ms": 2.2,
+      "misses": [
+        "T-04",
+        "T-08"
+      ],
+      "n": 18
+    },
+    {
+      "strategy": "similarity+metadata_filter(500 Pro)",
+      "k": 4,
+      "hit@k": 0.889,
+      "hit_all_facts@k": 0.889,
+      "mean_latency_ms": 2.8,
+      "misses": [
+        "T-04",
+        "T-08"
+      ],
+      "n": 18
+    },
+    {
+      "strategy": "hybrid",
+      "k": 4,
+      "hit@k": 0.944,
+      "hit_all_facts@k": 0.889,
+      "mean_latency_ms": 2.3,
+      "misses": [
+        "T-08"
+      ],
+      "n": 18
+    },
+    {
+      "strategy": "hybrid_rerank",
+      "k": 4,
+      "hit@k": 1.0,
+      "hit_all_facts@k": 0.889,
+      "mean_latency_ms": 2.8,
+      "misses": [],
+      "n": 18
+    }
+  ],
+  "identifier_queries": [
+    {
+      "query": "What does E-03 mean?",
+      "similarity": true,
+      "hybrid": true
+    },
+    {
+      "query": "FLT-M5",
+      "similarity": true,
+      "hybrid": true
+    },
+    {
+      "query": "price of AP-500P",
+      "similarity": true,
+      "hybrid": true
+    },
+    {
+      "query": "E-06",
+      "similarity": true,
+      "hybrid": true
+    }
+  ],
+  "reranking": {
+    "top4_precision_before": 0.639,
+    "top4_precision_after": 0.625,
+    "latency_ms_before": 2.4,
+    "latency_ms_after": 2.8,
+    "reranker": "lexical"
+  },
+  "metadata_filter_demo": {
+    "query": "How much is the replacement filter?",
+    "unfiltered_top4": [
+      [
+        "faq.md",
+        "all",
+        "Filters > Q16. Where do I buy replacement filters?"
+      ],
+      [
+        "product_manual_aquapearl500pro.pdf",
+        "AquaPearl 500 Pro",
+        "5. Filter Maintenance"
+      ],
+      [
+        "faq.md",
+        "all",
+        "Filters > Q17. Can I use another brand's filters?"
+      ],
+      [
+        "installation_guide.docx",
+        "all",
+        "5. First-Run Flushing Procedure"
+      ]
+    ],
+    "filtered_AeroPearl_Mini_pricing": [
+      [
+        "pricing_guide.csv",
+        "AeroPearl Mini",
+        "SKU FLT-H1"
+      ],
+      [
+        "pricing_guide.csv",
+        "all",
+        "SKU DSC-1"
+      ],
+      [
+        "pricing_guide.csv",
+        "AeroPearl Mini",
+        "SKU AR-MINI"
+      ]
+    ]
+  },
+  "threshold_calibration": {
+    "answerable_min": 0.29,
+    "answerable_mean": 0.476,
+    "unanswerable_max": 0.382,
+    "unanswerable_mean": 0.166,
+    "separable": false,
+    "recommended_threshold": 0.29,
+    "balanced_accuracy": 0.955,
+    "answerable_pass_rate": 1.0,
+    "unanswerable_block_rate": 0.909,
+    "n_pos": 18,
+    "n_neg": 11
+  }
+}

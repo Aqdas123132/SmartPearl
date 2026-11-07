@@ -1,0 +1,35 @@
+services:
+  api:
+    build: .
+    env_file: .env
+    environment:
+      VECTOR_STORE_PATH: /app/data/vector_store
+      DATABASE_URL: sqlite:////app/data/app.db
+      EMBEDDING_CACHE_PATH: /app/data/embedding_cache.sqlite
+      LOG_DIR: /app/logs
+    ports: ["8000:8000"]
+    volumes:
+      - pearlz_data:/app/data        # vector store, app database, embedding cache, uploads
+      - pearlz_logs:/app/logs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  ui:
+    build: .
+    command: ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    env_file: .env
+    environment:
+      VECTOR_STORE_PATH: /app/data/vector_store
+      DATABASE_URL: sqlite:////app/data/app.db
+      EMBEDDING_CACHE_PATH: /app/data/embedding_cache.sqlite
+      LOG_DIR: /app/logs
+    ports: ["8501:8501"]
+    volumes:
+      - pearlz_data:/app/data
+      - pearlz_logs:/app/logs
+    depends_on: [api]
+volumes:
+  pearlz_data:
+  pearlz_logs:

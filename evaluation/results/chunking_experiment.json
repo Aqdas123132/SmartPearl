@@ -1,0 +1,102 @@
+[
+  {
+    "strategy": "recursive",
+    "size": 300,
+    "overlap": 0,
+    "chunks": 155,
+    "mean_len": 245,
+    "max_len": 379,
+    "hit@4": 0.944,
+    "seconds": 0.01
+  },
+  {
+    "strategy": "recursive",
+    "size": 300,
+    "overlap": 45,
+    "chunks": 156,
+    "mean_len": 247,
+    "max_len": 379,
+    "hit@4": 0.944,
+    "seconds": 0.01
+  },
+  {
+    "strategy": "recursive",
+    "size": 800,
+    "overlap": 0,
+    "chunks": 65,
+    "mean_len": 532,
+    "max_len": 824,
+    "hit@4": 0.889,
+    "seconds": 0.0
+  },
+  {
+    "strategy": "recursive",
+    "size": 800,
+    "overlap": 120,
+    "chunks": 66,
+    "mean_len": 535,
+    "max_len": 824,
+    "hit@4": 0.889,
+    "seconds": 0.0
+  },
+  {
+    "strategy": "recursive",
+    "size": 1500,
+    "overlap": 0,
+    "chunks": 46,
+    "mean_len": 737,
+    "max_len": 1538,
+    "hit@4": 0.778,
+    "seconds": 0.0
+  },
+  {
+    "strategy": "recursive",
+    "size": 1500,
+    "overlap": 225,
+    "chunks": 47,
+    "mean_len": 749,
+    "max_len": 1538,
+    "hit@4": 0.833,
+    "seconds": 0.0
+  },
+  {
+    "strategy": "fixed",
+    "size": 800,
+    "overlap": 120,
+    "chunks": 64,
+    "mean_len": 599,
+    "max_len": 866,
+    "hit@4": 0.889,
+    "seconds": 0.02
+  },
+  {
+    "strategy": "structure",
+    "size": 300,
+    "overlap": 45,
+    "chunks": 166,
+    "mean_len": 256,
+    "max_len": 379,
+    "hit@4": 0.944,
+    "seconds": 0.01
+  },
+  {
+    "strategy": "structure",
+    "size": 800,
+    "overlap": 120,
+    "chunks": 126,
+    "mean_len": 318,
+    "max_len": 791,
+    "hit@4": 0.889,
+    "seconds": 0.01
+  },
+  {
+    "strategy": "structure",
+    "size": 1500,
+    "overlap": 225,
+    "chunks": 120,
+    "mean_len": 330,
+    "max_len": 1498,
+    "hit@4": 0.889,
+    "seconds": 0.01
+  }
+]

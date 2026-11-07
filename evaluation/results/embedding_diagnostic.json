@@ -1,0 +1,16 @@
+{
+  "embedding": {
+    "tag": "hash/bow-512",
+    "dimensions": 512
+  },
+  "pairs": {
+    "0-1": 0.139,
+    "0-2": 0.015,
+    "1-2": 0.013
+  },
+  "sentences": [
+    "My purifier keeps beeping three times.",
+    "The unit gives three short audible alarms repeatedly.",
+    "Delivery to Karachi takes one to two working days."
+  ]
+}

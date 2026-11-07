@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/vector_store/
+data/app.db
+data/embedding_cache.sqlite
+data/uploads/*
+logs/
+.pytest_cache/

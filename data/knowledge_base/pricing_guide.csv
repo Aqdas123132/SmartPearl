@@ -1,0 +1,15 @@
+sku,product_name,product_line,description,list_price_pkr,promo_price_pkr,availability
+AP-500P,AquaPearl 500 Pro,AquaPearl 500 Pro,4-stage RO water purifier with 8 L tank and UV-LED,64900,59900,In stock
+AP-300,AquaPearl 300,AquaPearl 300,3-stage under-sink water purifier,38500,34900,In stock
+AR-MINI,AeroPearl Mini,AeroPearl Mini,Compact HEPA air purifier for rooms up to 20 square metres,18900,16900,In stock
+AP-200,AquaPearl 200,AquaPearl 200,Older countertop water purifier,28500,28500,Discontinued
+AR-100,AeroPearl One,AeroPearl One,Older HEPA air purifier,14500,14500,Discontinued
+FLT-S5,Replacement sediment filter for AquaPearl 500 Pro,AquaPearl 500 Pro,Stage 1 sediment filter replaced every 4 months,1800,1600,In stock
+FLT-C5,Replacement carbon filter for AquaPearl 500 Pro,AquaPearl 500 Pro,Stage 2 carbon block filter replaced every 8 months,2600,2600,In stock
+FLT-M5,Replacement RO membrane for AquaPearl 500 Pro,AquaPearl 500 Pro,Stage 3 RO membrane replaced every 18 months,6500,6500,In stock
+FLT-S3,Replacement sediment filter for AquaPearl 300,AquaPearl 300,Stage 1 sediment filter for AquaPearl 300,1500,1500,In stock
+FLT-C3,Replacement carbon filter for AquaPearl 300,AquaPearl 300,Stage 2 carbon filter for AquaPearl 300,2200,2200,In stock
+FLT-H1,Replacement HEPA filter for AeroPearl Mini,AeroPearl Mini,True HEPA filter replaced every 12 months,3200,2900,In stock
+DSC-1,Descaling kit,all,Descaling solution for AquaPearl units sold in a single pack,950,950,In stock
+BND-500F,AquaPearl 500 Pro Filter Pack,AquaPearl 500 Pro,Bundle of FLT-S5 and FLT-C5 and FLT-M5,9900,8900,In stock
+BND-500S,AquaPearl 500 Pro Starter Bundle,AquaPearl 500 Pro,AP-500P plus one FLT-S5 and one DSC-1 at a bundled price,66900,61900,Limited stock
